@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <img id="myImage">
+    <script>
+      function setImageFromUrl() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const imageName = urlParams.get("image_name");
+        const imgElement = document.getElementById("myImage");
+        imgElement.src = "img/${imageName}";
+      }
+      setImageFromUrl();
+    </script>
+  </body>
+</html>
