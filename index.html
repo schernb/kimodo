@@ -7,7 +7,7 @@
         const urlParams = new URLSearchParams(window.location.search);
         const imageName = urlParams.get("image_name");
         const imgElement = document.getElementById("myImage");
-        imgElement.src = "img/${imageName}";
+        imgElement.src = "img/" + imageName;
       }
       setImageFromUrl();
     </script>
